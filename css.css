@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(212, 45%, 89%);
+}
+
+main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section{
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 10px;
+    row-gap: 20px;
+}
+
+/* Изображение */
+.qr{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 250px;
+   height: 250px; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Текст */
+.text{
+    display: grid;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100%;
+ }
+
+ p{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    padding: 0 20px 0 20px;
+ }
+
+ .first{
+    font-size: 1.1rem;
+    font-weight: 700;
+ }
+ 
+ .second{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    margin-bottom: 20px;
+ }
+
+ @media screen and (max-width: 600px){
+    .qr{
+        width: 280px;
+        height: 280px;
+        padding: 5px; 
+     }
+
+     p{
+        width: 250px;
+     }
+
+     .first{
+        font-size: 1.3rem;
+        
+     }
+     
+     .second{
+        font-size: 0.9rem;
+     }
+
+     .text{
+        row-gap: 15px;
+     }
+ }
